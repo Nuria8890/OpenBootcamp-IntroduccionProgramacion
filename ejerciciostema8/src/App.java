@@ -1,30 +1,30 @@
 public class App {
     public static void main(String[] args) throws Exception {
       Persona persona = new Persona();  
-      persona.setEdad("20");
+      persona.setEdad(20);
 
-      String edad = persona.getEdad();
-      System.out.println(edad);
+      int edad = persona.getEdad();
+      System.out.println("Tengo " + edad + " años");
 
       persona.setNombre("Antonio");
 
       String nombre = persona.getNombre();
-      System.out.println(nombre);
+      System.out.println("Me llamo " + nombre);
 
-      persona.setTelefono("612345678");
+      persona.setTelefono(612345678);
 
-      String telefono = persona.getTelefono();
-      System.out.println(telefono);
+      int telefono = persona.getTelefono();
+      System.out.println("Mi teléfono es " + telefono);
     }
 }
 
 class Persona{
-    private String edad;
+    private int edad;
    
-    public void setEdad(String edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
-    public String getEdad() {
+    public int getEdad() {
         return this.edad;
     }
 
@@ -37,15 +37,12 @@ class Persona{
         return this.nombre;
     }
 
-    private String telefono;
+    private int telefono;
 
-    public void setTelefono(String telefono) {
+    public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
-    public String getTelefono() {
+    public int getTelefono() {
         return this.telefono;
     }
-
-
-
 }
